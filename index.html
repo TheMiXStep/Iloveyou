@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>100 причин любить тебя ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>💖 100 причин любить тебя 💖</h1>
+            <div class="counter-panel">
+                <div class="counter-text">
+                    <span id="opened-count">0</span> / <span id="total-count">100</span> ❤️
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="music-player">
+                <div class="music-info">
+                    <div class="music-note">🎵</div>
+                    <div class="music-details">
+                        <div class="music-title">Наша песня</div>
+                        <div class="music-artist">Для тебя, любимая</div>
+                    </div>
+                </div>
+                <div class="player-controls">
+                    <button class="player-btn" id="playPauseBtn">
+                        <span class="play-icon">▶</span>
+                    </button>
+                    <div class="player-timeline">
+                        <div class="player-progress" id="progressBar">
+                            <div class="player-progress-filled" id="progressFilled"></div>
+                        </div>
+                        <div class="player-time">
+                            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                        </div>
+                    </div>
+                    <button class="player-btn" id="muteBtn">
+                        <span class="mute-icon">🔊</span>
+                    </button>
+                </div>
+                <audio id="audioPlayer" loop preload="metadata">
+                    <source src="nasha-pesnya.mp3/CUPSIZE_-_bolshe_chem_tvorchestvo_78201134.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио
+                </audio>
+            </div>
+ <div class="relationship-timer">
+                <div class="timer-header">
+                    <span class="timer-icon">⏳</span>
+                    <h3>Мы вместе уже</h3>
+                    <span class="timer-icon">⏳</span>
+                </div>
+                <div class="timer-display" id="relationshipTimer">
+                    <div class="timer-unit">
+                        <span class="timer-number" id="yearsCount">0</span>
+                        <span class="timer-label">лет</span>
+                    </div>
+                    <div class="timer-unit">
+                        <span class="timer-number" id="monthsCount">0</span>
+                        <span class="timer-label">месяцев</span>
+                    </div>
+                    <div class="timer-unit">
+                        <span class="timer-number" id="daysCount">0</span>
+                        <span class="timer-label">дней</span>
+                    </div>
+                    <div class="timer-unit">
+                        <span class="timer-number" id="hoursCount">0</span>
+                        <span class="timer-label">часов</span>
+                    </div>
+                    <div class="timer-unit">
+                        <span class="timer-number" id="minutesCount">0</span>
+                        <span class="timer-label">минут</span>
+                    </div>
+                    <div class="timer-unit">
+                        <span class="timer-number" id="secondsCount">0</span>
+                        <span class="timer-label">секунд</span>
+                    </div>
+                </div>
+                <div class="timer-date-info">
+                    <p class="timer-start">С 3 марта 2022 года, 23:33</p>
+                    <p class="timer-message">И с каждым мгновением люблю сильнее ❤️</p>
+                </div>
+            </div>
+            <button class="random-btn" id="randomButton">
+                <span>✨</span>
+                Случайная причина
+                <span>✨</span>
+            </button>
+
+            <div id="reasons-grid" class="grid"></div>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-heart">💕</span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="gallery-header">
+                <h2 class="gallery-title">
+                    <span class="title-heart">❤️</span>
+                    Наша история в фотографиях
+                    <span class="title-heart">❤️</span>
+                </h2>
+                <p class="gallery-subtitle">Каждое фото хранит частичку нашей любви</p>
+            </div>
+            <div class="photo-gallery" id="photoGallery">
+                <div class="gallery-item">
+                    <div class="photo-card">
+                        <div class="photo-container">
+                            <img src="nasha-pesnya.mp3/photo1.jpg" alt="Наше фото 1" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-hearts">
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                </div>
+                                <p class="photo-caption">Счастливый день</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="photo-card">
+                        <div class="photo-container">
+                            <img src="nasha-pesnya.mp3/photo2.jpg" alt="Наше фото 2" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-hearts">
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                </div>
+                                <p class="photo-caption">Твоя улыбка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="photo-card">
+                        <div class="photo-container">
+                            <img src="nasha-pesnya.mp3/photo3.jpg" alt="Наше фото 3" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-hearts">
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                </div>
+                                <p class="photo-caption">Мы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="photo-card">
+                        <div class="photo-container">
+                            <img src="nasha-pesnya.mp3/photo4.jpg" alt="Наше фото 4" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-hearts">
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                </div>
+                                <p class="photo-caption">Ты самая красивая</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="photo-card">
+                        <div class="photo-container">
+                            <img src="nasha-pesnya.mp3/photo5.jpg" alt="Наше фото 5" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-hearts">
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                </div>
+                                <p class="photo-caption">Bad bitch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="photo-card">
+                        <div class="photo-container">
+                            <img src="nasha-pesnya.mp3/photo6.jpg" alt="Наше фото 6" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-hearts">
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                    <span class="floating-heart">❤️</span>
+                                </div>
+                                <p class="photo-caption">Самая милая</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Каждое сердечко хранит частичку моего тепла для тебя</p>
+            <p class="small-text">❤️ Нажми на любое сердечко ❤️</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
